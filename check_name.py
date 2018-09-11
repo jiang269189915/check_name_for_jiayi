@@ -65,6 +65,8 @@ def main():
         if first_word != "":
             word = first_word
         word1 = get_word(record_list2)
+        if not word or not word1:
+            continue
         name = word + word1
         if not check_name_once(init_payload, org, ind, ind_code, name):
             if i == 5:

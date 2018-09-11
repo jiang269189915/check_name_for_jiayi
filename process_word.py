@@ -16,6 +16,5 @@ for line in f:
 f.close()
 f1 = open("word.txt", 'wb')
 for word in word_list:
-    print word
     print>>f1, word
 f1.close()
